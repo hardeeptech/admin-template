@@ -7,6 +7,11 @@ import { SidebarNavigationComponent } from './sidebar-navigation/sidebar-navigat
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { TablesPageComponent } from './tables-page/tables-page.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisterComponent } from './user/register/register.component';
+import { UserComponent } from './user/user.component';
+import { LayoutPageComponent } from './layout-page/layout-page.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -14,11 +19,17 @@ import { TablesPageComponent } from './tables-page/tables-page.component';
     SidebarNavigationComponent,
     TopNavigationComponent,
     DashboardPageComponent,
-    TablesPageComponent
+    TablesPageComponent,
+    LoginComponent,
+    RegisterComponent,
+    UserComponent,
+    LayoutPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
